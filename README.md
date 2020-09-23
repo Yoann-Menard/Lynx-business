@@ -1,6 +1,6 @@
 Lynx Business TEST TECHNIQUE : 
 
-Créer un système de blog avec système de droits. 
+Créer un blog avec système de droits. 
 
 
 Droits : 
