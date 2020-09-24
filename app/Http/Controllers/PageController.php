@@ -21,5 +21,9 @@ class PageController extends Controller {
         $data['fullname'] = $fullname;
         return view('pages.about')->withData($data);
     }
+
+    public function Contact() {
+        return view('pages.contact');
+    }
 }
 ?>

@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('about', 'App\Http\Controllers\PageController@About');
+Route::get('qui-sommes-nous', 'App\Http\Controllers\PageController@About');
+Route::get('contact', 'App\Http\Controllers\PageController@Contact');
 
 Route::resource('/', 'App\Http\Controllers\PageController');
