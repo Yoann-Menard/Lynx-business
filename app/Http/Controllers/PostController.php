@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
-use Illuminate\Auth\Events\Validated;
+use Session;
+
 
 class PostController extends Controller
 {
@@ -49,6 +50,8 @@ class PostController extends Controller
 
         $post->save();
 
+        $request->session()->flash('success', 'Le post a été crée avec succès !');
+
         return redirect()->route('posts.show', $post->id);
     }
 
@@ -60,7 +63,7 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('posts.show');
     }
 
     /**

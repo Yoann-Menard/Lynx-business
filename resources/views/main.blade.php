@@ -1,22 +1,24 @@
 <!doctype html>
 <html lang="en">
     <head>
-        @include('_head')
+        @include('partials._head')
     </head>
     
 <body>
 
-@include('_nav')
+@include('partials._nav')
 
 <div class="container">
 
+    @include('partials._messages')
+
     @yield('content')
 
-    @include('_footer')
+    @include('partials._footer')
 
 </div>
 
-    @include('_javascript')
+    @include('partials._javascript')
 
     @yield('scripts')
 </body>
