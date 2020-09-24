@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
-Route::get('qui-sommes-nous', 'App\Http\Controllers\PageController@About');
 Route::get('contact', 'App\Http\Controllers\PageController@Contact');
+Route::get('qui-sommes-nous', 'App\Http\Controllers\PageController@About');
 
 Route::resource('/', 'App\Http\Controllers\PageController');
+Route::resource('posts', 'App\Http\Controllers\PostController');
