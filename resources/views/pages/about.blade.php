@@ -9,4 +9,4 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, unde odit, quis eius veniam vel quae ab quas voluptate, ipsum voluptatem? Maiores id fugit ducimus sapiente ratione nihil, itaque eligendi!</p>
         </div>
     </div>
-@endsection
+@stop

@@ -6,7 +6,7 @@
 
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
-        <h1>Crée un post</h1>
+        <h1>Créer un post</h1>
         <hr>
         <form action="/posts" method="POST">
             @csrf
@@ -25,4 +25,4 @@
     </div>
 </div>
 
-@endsection
+@stop

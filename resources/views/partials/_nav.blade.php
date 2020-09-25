@@ -5,17 +5,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-        <li class="nav-item active">
+    <li class="{{ Request::is('/') ? "active" : "nav-item"}}">
         <a class="nav-link" href="/">Accueil</a>
+    </li>
+
+
+        <li class="{{ Request::is('qui-sommes-nous') ? "active" : "nav-item"}}">
+            <a class="nav-link" href="/qui-sommes-nous">Qui sommes nous ?</a>
         </li>
 
-
-        <li class="nav-item">
-        <a class="nav-link" href="/qui-sommes-nous">Qui sommes nous ?</a>
-        </li>
-
-        <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact</a>
+        <li class="{{ Request::is('contact') ? "active" : "nav-item"}}">
+            <a class="nav-link" href="/contact">Contact</a>
         </li>
     </ul>
 
@@ -23,14 +23,14 @@
         <li class="dropdown">
             <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Compte<span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li class="nav-item">
+            <li class="{{ Request::is('register') ? "active" : "nav-item"}}">
                 <a class="nav-link" href="/register">Inscription</a>
             </li>
 
-            <li class="nav-item">
+            <li class="{{ Request::is('login') ? "active" : "nav-item"}}">
                 <a class="nav-link" href="/login">Connexion</a>
             </li>
-            </li>
+        </li>
         </ul>
     </ul>
     </div>
