@@ -15,3 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('/', 'App\Http\Controllers\PageController');
 Route::resource('posts', 'App\Http\Controllers\PostController');
+Route::resource('register', 'App\Http\Controllers\RegisterController');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return Inertia\Inertia::render('Dashboard');
+})->name('dashboard');

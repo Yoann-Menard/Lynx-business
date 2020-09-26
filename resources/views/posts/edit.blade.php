@@ -27,6 +27,8 @@
             <a href="{{ route('posts.show', $post->id) }}" class="btn btn-danger">Annuler</a>
             
             {{ Form::submit('Sauvegarder les changements', ['class' => 'btn btn-success']) }}
+            
+            {{!! Form::close() !!}}
         </div>
     </div>
     {!! Form::close() !!}

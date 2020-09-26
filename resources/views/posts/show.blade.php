@@ -30,8 +30,11 @@
                 </div>
 
                 <div class="col-sm-6">
-                    {!! Form:open(['route' => ['posts.destroy', $post->id], 'method' => 'DELETE']) !!}
-                    <a href="{{ route('posts.destroy', $post->id) }}" class="btn btn-block btn-danger">Supprimer</a>
+                    {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'DELETE']) !!}
+
+                    {!! Form::submit('Supprimer', ['class' => 'btn btn-danger btn-block'])!!}
+
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>
